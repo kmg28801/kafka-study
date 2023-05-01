@@ -8,7 +8,7 @@ import java.io.IOException;
 @Configuration
 public class KafkaConsumer {
 
-	@KafkaListener(topics = "tj-topic", groupId = "tj-topic")
+	@KafkaListener(topics = "tj-topic2", groupId = "tj-topic2")
 	public void consume(String message) throws IOException {
 		System.out.println(String.format("Consumed message : %s", message));
 	}
